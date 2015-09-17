@@ -1,5 +1,5 @@
 # vim-tabstop
-Switch tagstop option in vim
+Set tabstop option in vim
 
 ## Usage
 
@@ -21,18 +21,20 @@ Now you can use the command `Tabstop`:
 Or:
 
 ```vim
-:Tabstop " set tabstop to 2
 :Tabstop " set tabstop to 4
+:Tabstop " set tabstop to 2
 ```
 
-If no arguments given, it will iterate [2, 4] by default. Of cource you can specify the alternatives in your `.vimrc`
+If no arguments given, it will iterate `[2, 4]` by default.
+
+You can specify the alternatives in your `.vimrc`
 
 ```vim
-let g:tabstop_alternatives = [2, 4, 8] " Put it before Plugin
+" Put it before Plugin
+" Now tabstop is set to 2 at first, and then 4, 8 for each switch
+let g:tabstop_alternatives = [2, 4, 8]
 Plugin "zoubin/vim-tabstop"
 ```
-
-Now:
 
 ```vim
 :Tabstop " set tabstop to 4

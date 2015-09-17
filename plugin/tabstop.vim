@@ -18,7 +18,7 @@ let g:loaded_tabstop = 1
 if exists("g:tabstop_alternatives")
   let s:tabstop_alternatives = g:tabstop_alternatives
 else
-  let s:tabstop_alternatives = [4, 2]
+  let s:tabstop_alternatives = [2, 4]
 endif
 let s:index = 0
 let s:len = len(s:tabstop_alternatives)
